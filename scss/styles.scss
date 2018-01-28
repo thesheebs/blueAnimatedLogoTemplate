@@ -84,9 +84,9 @@ a:hover {
   height: 100vh;
   padding-top: 0;
   padding-bottom: 0;
-  background: url("/images/cubes.png"), $primary-color;
-  background: url("/images/cubes.png"), -webkit-linear-gradient(to left, $primary-color, $secondary-color);
-  background: url("/images/cubes.png"), linear-gradient(to left, $primary-color, $secondary-color);
+  background: url("../images/cubes.png"), $primary-color;
+  background: url("../images/cubes.png"), -webkit-linear-gradient(to left, $primary-color, $secondary-color);
+  background: url("../images/cubes.png"), linear-gradient(to left, $primary-color, $secondary-color);
   // -webkit-background-size: cover;
   // -moz-background-size: cover;
   // -o-background-size: cover;
@@ -126,9 +126,9 @@ a:hover {
   }
 
   #gear {
-    background: url("/images/grid-me.png"), $primary-color;
-    background: url("/images/grid-me.png"), -webkit-linear-gradient(to left, $primary-color, $secondary-color);
-    background: url("/images/grid-me.png"), linear-gradient(to left, $primary-color, $secondary-color);
+    background: url("../images/grid-me.png"), $primary-color;
+    background: url("../images/grid-me.png"), -webkit-linear-gradient(to left, $primary-color, $secondary-color);
+    background: url("../images/grid-me.png"), linear-gradient(to left, $primary-color, $secondary-color);
     i {
       font-size: 150px;
     }

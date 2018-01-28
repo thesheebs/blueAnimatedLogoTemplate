@@ -38,9 +38,9 @@ a:hover {
   height: 100vh;
   padding-top: 0;
   padding-bottom: 0;
-  background: url("/images/cubes.png"), #015394;
-  background: url("/images/cubes.png"), -webkit-linear-gradient(to left, #015394, #4099d2);
-  background: url("/images/cubes.png"), linear-gradient(to left, #015394, #4099d2); }
+  background: url("../images/cubes.png"), #015394;
+  background: url("../images/cubes.png"), -webkit-linear-gradient(to left, #015394, #4099d2);
+  background: url("../images/cubes.png"), linear-gradient(to left, #015394, #4099d2); }
   .masthead #animated-logo {
     -webkit-animation: rotation 6s infinite linear; }
   .masthead ul {
@@ -61,9 +61,9 @@ a:hover {
       visibility: hidden; } }
 
 #gear {
-  background: url("/images/grid-me.png"), #015394;
-  background: url("/images/grid-me.png"), -webkit-linear-gradient(to left, #015394, #4099d2);
-  background: url("/images/grid-me.png"), linear-gradient(to left, #015394, #4099d2); }
+  background: url("../images/grid-me.png"), #015394;
+  background: url("../images/grid-me.png"), -webkit-linear-gradient(to left, #015394, #4099d2);
+  background: url("../images/grid-me.png"), linear-gradient(to left, #015394, #4099d2); }
   #gear i {
     font-size: 150px; }
 
