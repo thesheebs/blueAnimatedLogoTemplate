@@ -1,0 +1,77 @@
+body, html {
+  font-family: "Raleway", sans-serif;
+  height: 100%;
+  color: #333; }
+
+a:hover {
+  text-decoration: none; }
+
+.hidden {
+  display: none; }
+
+.navbar-light .navbar-brand {
+  color: #4099d2; }
+
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+  color: #4099d2b3; }
+
+.bg {
+  background: #fff;
+  border-bottom: 1px solid #015394;
+  opacity: 0; }
+
+.show {
+  opacity: 1; }
+
+.transition {
+  -webkit-transition: all .5s ease-in;
+  -moz-transition: all .5s ease-in;
+  -o-transition: all .5s ease-in;
+  transition: all .5s ease-in; }
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(359deg); } }
+.masthead {
+  height: 100vh;
+  padding-top: 0;
+  padding-bottom: 0;
+  background: url("/images/cubes.png"), #015394;
+  background: url("/images/cubes.png"), -webkit-linear-gradient(to left, #015394, #4099d2);
+  background: url("/images/cubes.png"), linear-gradient(to left, #015394, #4099d2); }
+  .masthead #animated-logo {
+    -webkit-animation: rotation 6s infinite linear; }
+  .masthead ul {
+    padding: 0; }
+    .masthead ul li {
+      list-style-type: none;
+      margin-bottom: 20px;
+      margin-left: 0;
+      text-transform: uppercase; }
+      .masthead ul li a, .masthead ul li a:visited {
+        color: #fafafa;
+        text-decoration: none;
+        font-size: 1.5rem; }
+      .masthead ul li a:hover, .masthead ul li a:active {
+        color: #ffffffb3; }
+  @media (max-width: 768px) {
+    .masthead ul {
+      visibility: hidden; } }
+
+#gear {
+  background: url("/images/grid-me.png"), #015394;
+  background: url("/images/grid-me.png"), -webkit-linear-gradient(to left, #015394, #4099d2);
+  background: url("/images/grid-me.png"), linear-gradient(to left, #015394, #4099d2); }
+  #gear i {
+    font-size: 150px; }
+
+footer {
+  padding: 50px 0;
+  background-color: #292728;
+  color: #999; }
+  footer a, footer a:hover, footer a:visited, footer a:focus {
+    color: #999; }
+
+/*# sourceMappingURL=styles.css.map */

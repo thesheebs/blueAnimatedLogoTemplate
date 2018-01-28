@@ -1,0 +1,144 @@
+// Horizontal gradient, from left to right
+@mixin linearGradient($left, $right){
+    background: $left; /* Old browsers */
+    background: -moz-linear-gradient(left,  $left 0%, $right 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left left, left right, color-stop(0%,$left), color-stop(100%,$right)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  $left 0%,$right 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  $left 0%,$right 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  $left 0%,$right 100%); /* IE10+ */
+    background: linear-gradient(to right,  $left 0%,$right 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+  // Vertical gradient, from top to bottom
+  @mixin verticalGradient($top, $bottom){
+    background: $top; /* Old browsers */
+    background: -moz-linear-gradient(top,  $top 0%, $bottom 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, top top, top bottom, color-stop(0%,$top), color-stop(100%,$bottom)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  $top 0%,$bottom 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  $top 0%,$bottom 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  $top 0%,$bottom 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  $top 0%,$bottom 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+// font-family: 'Raleway', sans-serif;
+// font-family: 'Lora', serif;
+
+$font-stack: 'Raleway', sans-serif;
+$primary-color: #015394; //darker blue
+$secondary-color: #4099d2;
+$text-color: #333;
+
+body, html {
+  font-family: $font-stack;
+  height: 100%;
+  color: $text-color;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.hidden{
+  display: none;
+}
+
+.navbar-light .navbar-brand {
+    color: $secondary-color;
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+    color: #4099d2b3;
+}
+
+.bg {
+  background: #fff;
+  border-bottom: 1px solid $primary-color;
+  opacity: 0;
+
+}
+
+.show {
+  opacity: 1;
+}
+
+.transition {
+  -webkit-transition: all .5s ease-in;
+	-moz-transition: all .5s ease-in;
+	-o-transition: all .5s ease-in;
+	transition: all .5s ease-in;
+}
+
+// .animated-nav {
+//     background-color: #ffffff;
+//     -webkit-transition: width 2s; /* Safari */
+//     transition: width 2s;
+//     border-bottom: 1px solid #333;
+// }
+
+@-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(0deg);}
+    to   {-webkit-transform: rotate(359deg);}
+}
+
+.masthead {
+  height: 100vh;
+  padding-top: 0;
+  padding-bottom: 0;
+  background: url("/images/cubes.png"), $primary-color;
+  background: url("/images/cubes.png"), -webkit-linear-gradient(to left, $primary-color, $secondary-color);
+  background: url("/images/cubes.png"), linear-gradient(to left, $primary-color, $secondary-color);
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: cover;
+  // background-position: center;
+  // background-attachment: fixed;
+  // background-repeat:no-repeat;
+
+
+  #animated-logo {
+    -webkit-animation: rotation 6s infinite linear;
+    }
+
+    ul {
+      padding:0;
+      li {
+        list-style-type: none;
+        margin-bottom: 20px;
+        margin-left: 0;
+        text-transform: uppercase;
+
+        a, a:visited{
+          color: #fafafa;
+          text-decoration: none;
+          font-size: 1.5rem;
+        }
+        a:hover, a:active {
+          color: #ffffffb3;
+        }
+      }
+    }
+    @media (max-width: 768px) {
+      ul {
+        visibility: hidden;
+      }
+    }
+  }
+
+  #gear {
+    background: url("/images/grid-me.png"), $primary-color;
+    background: url("/images/grid-me.png"), -webkit-linear-gradient(to left, $primary-color, $secondary-color);
+    background: url("/images/grid-me.png"), linear-gradient(to left, $primary-color, $secondary-color);
+    i {
+      font-size: 150px;
+    }
+  }
+
+  footer {
+    padding: 50px 0;
+    background-color: #292728;
+    color: #999;
+    a, a:hover, a:visited, a:focus{
+      color: #999;
+    }
+  }
